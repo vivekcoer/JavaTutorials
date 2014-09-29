@@ -14,6 +14,17 @@ public class TestUnsynchronized {
 	    print("doAction() sleep after taskID " + taskID);
 	    print("leaving performATask()");
 	  }
+	  
+	  // Output?
+	  
+	  //entering doAction()
+	  //doAction() taskID 3// 0 ms
+	  //entering doAction()//after 2000 ms
+	  //doAction() taskID 7 
+	  //doAction() sleep after taskID 7 //after 4000 ms - thread is of task 3 but the value of taskid has been changed.
+	  //leaving performATask()
+	  //doAction() sleep after taskID 7 //after 6000 ms
+	  //leaving performATask()
 
 	  public static void print(String msg) {
 	    String threadName = Thread.currentThread().getName();
