@@ -34,6 +34,11 @@ public class App {
 		  System.out.println("key: " + key + " value: " + map.get(key));
 		}
 		
+		//another way
+		for(Integer key1: map.keySet()){
+			
+		}
+		
 		List<String> list = new ArrayList<>();
 		
 		for(String val: list){
