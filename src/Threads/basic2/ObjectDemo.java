@@ -1,7 +1,5 @@
 package Threads.basic2;
 
-package com.tutorialspoint;
-
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
