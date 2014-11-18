@@ -25,7 +25,7 @@ public class Employee {
 		Name = name;
 	}
 	
-	public Employee(int empNum, double age, String name) {
+	public Employee(String name, int empNum, double age) {
 		this.empNum = empNum;
 		this.age = age;
 		Name = name;
