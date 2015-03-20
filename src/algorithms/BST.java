@@ -7,7 +7,8 @@ package algorithms;
  *****************************************************************************/
 
 import java.util.*;
-
+//This means that the type parameter T must support comparison with other instances of its own type, via the Comparable interface.
+//therefore the objects that would be used for binary tree would be comparable type.  e.g. Integer.
 public class BST <T extends Comparable<T>> implements Iterable<T>
 {
    public static void main(String[] args)
