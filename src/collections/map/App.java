@@ -27,6 +27,8 @@ public class App {
 		//App a = new App();
 //		a.category = "Permanent Employees";
 		useNativeDataType();
+		useEmployeeDataType();
+		Object obj = new Object();
 	}
 	
 	public static void useNativeDataType(){		
@@ -34,7 +36,7 @@ public class App {
 	}
 	
 	public static void useEmployeeDataType(){
-		
+		Map<String, Employee> myEmployees = new HashMap<String, Employee>();		
 	}
 
 }
