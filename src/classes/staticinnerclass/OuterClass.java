@@ -57,9 +57,9 @@ public class OuterClass {
 			this.innerClassNumber = id;
 		}
 		
-		public String printContents(){
+		public void printContents(){
 			String concatenatedStr = "outer class: " + outerClassName + outerClassNumber + " inner class: " + this.innerClassName + this.innerClassNumber;
-			return concatenatedStr;
+			System.out.println(concatenatedStr);
 		}
 	}
 
