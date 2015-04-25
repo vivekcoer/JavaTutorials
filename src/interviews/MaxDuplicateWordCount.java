@@ -58,7 +58,7 @@ public class MaxDuplicateWordCount {
          
         Set<Entry<String, Integer>> set = wordMap.entrySet();
         List<Entry<String, Integer>> list = new ArrayList<Entry<String, Integer>>(set);
-        Collections.sort( list, new Comparator<Map.Entry<String, Integer>>()
+        Collections.sort( list, new Comparator<Entry<String, Integer>>()
         {
             public int compare( Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2 )
             {
