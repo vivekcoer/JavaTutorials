@@ -43,7 +43,7 @@ public class HashFunction {
 
 	HashFunction(int size) {
 		arraySize = size;
-		theArray = new WordList[size];
+		theArray = new WordList[arraySize];
 		// Fill the array with WordLists
 
 		for (int i = 0; i < arraySize; i++) {
