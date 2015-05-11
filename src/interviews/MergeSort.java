@@ -50,8 +50,9 @@ public class MergeSort {
 				
 		mergeSort(a);
 		mergeSort(b);	// the beauty of recursion is that once the termination condition is met (first if on the top) and the merge(a,b,c) will keep calling exactly in the FILO manner.
-		                // you don't have to do anything else!
-		                //not that myArr, array which is getting divided is also used for consuming merged array - the data has already been copied in a and b, so no data loss!
+		                // you don't have to do anything else!  Since the arrays are always passed using their references, everytime merge runs it actually returns a sorted array.  
+		                // And therefore myArr and its childs gets sorted in the calling function.
+		                // note that myArr, array which is getting divided is also used for consuming merged array - the data has already been copied in a and b, so no data loss!
 		
 		merge(a,b,myArr);
 	}
