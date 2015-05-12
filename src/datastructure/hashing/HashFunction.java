@@ -32,16 +32,16 @@ public class HashFunction {
 			int hKVTemp = hashKeyValue;
 			// Calculate the hash key using the 26 letters plus blank
 			hashKeyValue = (hashKeyValue * 27 + charCode) % arraySize;
-			System.out.println("Hash Key Value " + hKVTemp
-					+ " * 27 + Character Code " + charCode + " % arraySize "
-					+ arraySize + " = " + hashKeyValue);
+//			System.out.println("Hash Key Value " + hKVTemp
+//					+ " * 27 + Character Code " + charCode + " % arraySize "
+//					+ arraySize + " = " + hashKeyValue);
 
 		}
 		System.out.println();
 		return hashKeyValue;
 	}
 
-	HashFunction(int size) {
+	public HashFunction(int size) {
 		arraySize = size;
 		theArray = new WordList[arraySize];
 		// Fill the array with WordLists

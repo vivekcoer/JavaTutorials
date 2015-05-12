@@ -28,16 +28,17 @@ public class ListCopy {
 
 	public static void main(String[] args){
 		
+		ListCopy obj = new ListCopy();
+		
 		List<String> src = new ArrayList<String>();		
 		src.add("c");
 		src.add("a");
 		src.add("d");
 		src.add("b");		
-		List<String> dest = new ArrayList<String>();	
 		
-		ListCopy obj = new ListCopy();
-			
+		List<String> dest = new ArrayList<String>();			
 		dest = null;
+		
 		dest=src;
 		System.out.print("Destination List After direct copy: ");
 		System.out.println(StringUtils.join(dest, ","));
