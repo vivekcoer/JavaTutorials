@@ -43,24 +43,24 @@ public class Fibonacci {
 		System.out.println("Enter the length of the Fibonicci Series you wish to see");
 
 		int n = 0;
-//		Scanner sc = new Scanner(System.in);
-//		if(sc.hasNextInt()){
-//			n = sc.nextInt();
-//		}
-		String line = null;
-		InputStreamReader isr = new InputStreamReader(System.in);
-		BufferedReader br = new BufferedReader(isr);
-		try{
-			if((line=br.readLine())!=null){
-				try{
-					n = Integer.parseInt(line);
-				}catch (Exception e){
-					
-				}
-			}
-		}catch(Exception e){
-			
+		Scanner sc = new Scanner(System.in);
+		if(sc.hasNextInt()){
+			n = sc.nextInt();
 		}
+//		String line = null;
+//		InputStreamReader isr = new InputStreamReader(System.in);
+//		BufferedReader br = new BufferedReader(isr);
+//		try{
+//			if((line=br.readLine())!=null){
+//				try{
+//					n = Integer.parseInt(line);
+//				}catch (Exception e){
+//					
+//				}
+//			}
+//		}catch(Exception e){
+//			
+//		}
 		//obj.doFib(n);
 		//recursive method
 		obj.fibRec(n);
