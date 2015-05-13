@@ -50,7 +50,7 @@ public class CreateBinarySearchTree {
                 }
                 node = node.right;
             } else{
-            	break;
+            	return;
             }
         }
     }

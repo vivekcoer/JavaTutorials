@@ -1,7 +1,5 @@
 package interviews;
 
-import interviews.CreateBinarySearchTree.TreeNode;
-
 public class MyBST2 {
 	
    Node _root;
