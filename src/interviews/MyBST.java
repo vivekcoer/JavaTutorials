@@ -67,7 +67,7 @@ public class MyBST {
 		
 		if(root._right!=null){
 			traverse(root._right);
-		}
+		}		
 	}
 	
 	//now do it non-recrusively!
